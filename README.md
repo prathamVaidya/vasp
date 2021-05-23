@@ -42,6 +42,7 @@ It is written in bash script and can be executed on all major OS like Linux, Win
 To run in Linux :
        
       cd vasp-cli-client/
+       chmod +x app.sh
       ./app.sh
     
 To run in Windows :

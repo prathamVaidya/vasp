@@ -18,7 +18,8 @@ Once deployed on the server you can use
 
 Here <hostname> is url of your server and <pincode> the pincode of the city
 
-Example : 192.168.199.151/api/vaccine/apn_check.php?pincode=261001
+Example : 192.168.199.151/apn_check.php?pincode=261001
+       OR www.your-server.com/apn_check.php?pincode=261001
 
 
 ### Status Codes
@@ -36,7 +37,7 @@ The server by default Logs all the data for the available slot and save it in th
 Note that the logs are accessible by public by default change file permissions accordingly.
 
 ## VASP Client
-It is written in bash script and can be executed on all major OS Linux, Windows and Mac
+It is written in bash script and can be executed on all major OS like Linux, Windows and Mac
 
 To run in Linux :
        

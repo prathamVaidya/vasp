@@ -1,8 +1,10 @@
 # VASP
 Vaccine Appointment System by Pratham
 
-This vaccine appointment system helps fetches data from the official public cowin API to check for vaccine availability in the city for 18+.
+This vaccine appointment system fetches data from the official public Cowin API to check for vaccine availability in the city for 18-44 Age group.
 The vasp client service can be run to automatically check for vaccine avalilability and it can send a message when vaccine is available.
+
+It only works for 18-44 Age Group . You can edit the apn_check.php to change the age or feel free to update the code.
 
 ## VASP server
 It is wirtten in PHP and can be deployed to any hosting or even on a localhost.
@@ -23,7 +25,7 @@ Example : 192.168.199.151/api/vaccine/apn_check.php?pincode=261001
 
 The results of the url shows the status of the vaccine availabilty:
 
-- 0 For Unavailable (It is for places where even the 18+ vaccine camp has not started yet)
+- 0 For Unavailable (It is for places where even the 18-44 Age Group vaccine camp has not started yet)
 - 1 for Available but all booked 
 - 2 for Slots Available (Success)
 - 3 for Some error (becuase firewall sometimes blocks requests temporarily)
@@ -37,16 +39,22 @@ Note that the logs are accessible by public by default change file permissions a
 It is written in bash script and can be executed on all major OS Linux, Windows and Mac
 
 To run in Linux :
-      cd cd vasp-cli-client/
+       
+      cd vasp-cli-client/
       ./app.sh
+    
+To run in Windows :
+      https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10
       
-    This will run the Service and it will start checking for Vaccine Availability. Once It get the vaccine available slots it will send a mesage* to your specified number.
+This will run the Service and it will start checking for Vaccine Availability. Once It get the vaccine available slots it will send a mesage* to your specified number.
     
-    ### Client Condifgurations
+### Client Condifgurations
     
-    #### To change Pincodes list for which availability will be check edit the pincodes.txt with one pincode on every line
+#### To change Pincodes list 
+ Edit the pincodes.txt with one pincode on each line
     
-    #### To change the text message mobile number list edit the mobile.txt with one mobile number on every line
+#### To change the text message mobile number list 
+ Edit the mobile.txt with one mobile number on each line
     
     
    

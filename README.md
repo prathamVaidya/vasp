@@ -58,4 +58,11 @@ This will run the Service and it will start checking for Vaccine Availability. O
  Edit the mobile.txt with one mobile number on each line
     
     
-   
+## Free Message Notification (Very Important)
+       
+The vasp client sends the text message and notifies them about the vaccine slots availability but to do it for free without using any messaging API's I used 
+cowin registration API. This API is public and it was meant for authenticating cowin users with there mobile. 
+       
+So when a vaccine is avaialable this API will be triggered and a mesage saying "This is your OTP for Cowin Verification will be sent to your phone". You dont have to put OTP anywhere. After deplying the vasp if you get this message (when you didn't even requested for an OTP) then it means it is a Vaccine Slot Notification by Vasp. 
+       
+

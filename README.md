@@ -14,7 +14,7 @@ Copy all the files inside vasp-server to your server (where the .htaccess file i
 
 Once deployed on the server you can use 
 
-<hostname>/apn_check.php?pincode=<pincode>
+       <hostname>/apn_check.php?pincode=<pincode>
 
 Here <hostname> is url of your server and <pincode> the pincode of the city
 
